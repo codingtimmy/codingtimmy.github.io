@@ -5,68 +5,77 @@
 		<meta charset="utf-8"/>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 		<link href="styles.css" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 	</head>
 	
 	<body>
-		<div class="container header">
-            <div class="row">
-			    <div class="col-2 border">
-				    <img class="logo" src="logo-placeholder.png"></img>
-				</div>
-				<div class="col-10 border">
-				<nav>
-					<ul>
-						<li><a class="navButton" href="index.html">Etusivu<a></li>
-						<li><a class="navButton currentPage" href="courses.html">Kurssit</a></li>
-						<li><a class="navButton" href="staff.html">Henkilökunta</a></li>
-						<li><a class="navButton" href="contact.html">Ota yhteyttä</a></li>
+		<div class="container">
+            <img class="img-fluid" src="orange.jpg"></img>
+		</div>
+	
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="nav">
+						<li class="nav-item"><a class="nav-link" href="index.html">Etusivu<a></li>
+						<li class="nav-item dropdown">
+							<a class="nav-link currentPage dropdown-toggle" href="courses.html" id="navbardrop">Kurssit</a>
+							<div class="dropdown-menu">
+								<a class="dropdown-item" href="#">Soittotunnit</a>
+								<a class="dropdown-item" href="#">Musiikin teoria</a>
+								<a class="dropdown-item" href="#">Larp</a>
+							</div>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="staff.html">Henkilökunta</a></li>
+						<li class="nav-item"><a class="nav-link" href="contact.html">Ota yhteyttä</a></li>
 					</ul>
-				</nav>
 				</div>
 			</div>
-		</div>
+		</nav>
 		
 		<main>
 			<div class="container">
 			    <div class="row">
-				    <div class="col-sm-2">
-					</div>
-				    <div class="col-10 border">
+				    <div class="col">
 					    <h1>Kurssit</h1>
 					</div>
 				</div>
-				<br/>
+				<br>
 				<div class="row">
-					<div class="col-sm-2">
-					</div>
-					<div class="col-sm-5">
-					    <article class="content">
-						    <h2>Kurssi 1</h2>
-						    <p>Tähän sisältöä. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lobortis nulla arcu, id commodo mi consequat non. Vivamus ipsum urna, pellentesque nec massa at, accumsan pellentesque dui. Integer tortor mauris, tempus quis egestas molestie, ornare sed dolor. Pellentesque aliquet eros non lacus faucibus fermentum. Etiam elementum rhoncus libero nec consectetur. Etiam commodo quam at nisl mollis, in auctor turpis maximus. Sed fermentum velit eget ex fermentum porta. In libero est, tincidunt id mauris ut, lobortis volutpat lacus.</p>
+					<div class="col-md-6">
+					    <article class="scaled">
+						    <h2><a href="#">Soittotunnit</a></h2>
+						    <p>Soitonopettajamme antavat soittotunteja seuraavista soittimista:</p>
+							<ul>
+							    <li>Alttoviulu</li>
+								<li>Klarinetti</li>
+								<li>Laulu (klassinen ja pop/jazz)</li>
+								<li>Nokkahuilu</li>
+								<li>Saksofoni</li>
+							</ul>
 					    </article>
 					</div>
-					<div class="col-sm-5">
-					    <article class="content">
-						    <h2>Kurssi 2</h2>
-						    <p>Tähän sisältöä. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lobortis nulla arcu, id commodo mi consequat non. Vivamus ipsum urna, pellentesque nec massa at, accumsan pellentesque dui. Integer tortor mauris, tempus quis egestas molestie, ornare sed dolor. Pellentesque aliquet eros non lacus faucibus fermentum. Etiam elementum rhoncus libero nec consectetur. Etiam commodo quam at nisl mollis, in auctor turpis maximus. Sed fermentum velit eget ex fermentum porta. In libero est, tincidunt id mauris ut, lobortis volutpat lacus.</p>
+					<div class="col-md-6">
+					    <article class="scaled">
+						    <h2><a href="#">Musiikin teoria</a></h2>
+						    <p>Kuka sanoi, että musiikin teorian opiskelun täytyy olla tylsää?<br>
+							Iiriksen tunneilla ei taatusti käy aika pitkäksi!</p>
 					    </article>
 					</div>
 				</div>
-				<br/>
 				<div class="row">
-					<div class="col-sm-2">
-					</div>
-					<div class="col-sm-5">
-					    <article class="content">
-						    <h2>Kurssi 3</h2>
-						    <p>Tähän sisältöä. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lobortis nulla arcu, id commodo mi consequat non. Vivamus ipsum urna, pellentesque nec massa at, accumsan pellentesque dui. Integer tortor mauris, tempus quis egestas molestie, ornare sed dolor. Pellentesque aliquet eros non lacus faucibus fermentum. Etiam elementum rhoncus libero nec consectetur. Etiam commodo quam at nisl mollis, in auctor turpis maximus. Sed fermentum velit eget ex fermentum porta. In libero est, tincidunt id mauris ut, lobortis volutpat lacus.</p>
+					<div class="col-md-6">
+					    <article class="scaled">
+						    <h2><a href="#">Larp</a></h2>
+						    <p>Osuuskuntamme järjestää liveroolipelaukseen liittyviä tapahtumia.<br><br>
+							Mitä on larppaus? Käy tutustumassa harrastukseen <a href="https://larp.fi/" target="_blank">tästä</a>!</p>
 					    </article>
 					</div>
-					<div class="col-sm-5">
-					    <article class="content">
-						    <h2>Kurssi 4</h2>
-						    <p>Tähän sisältöä. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lobortis nulla arcu, id commodo mi consequat non. Vivamus ipsum urna, pellentesque nec massa at, accumsan pellentesque dui. Integer tortor mauris, tempus quis egestas molestie, ornare sed dolor. Pellentesque aliquet eros non lacus faucibus fermentum. Etiam elementum rhoncus libero nec consectetur. Etiam commodo quam at nisl mollis, in auctor turpis maximus. Sed fermentum velit eget ex fermentum porta. In libero est, tincidunt id mauris ut, lobortis volutpat lacus.</p>
-					    </article>
+					<div class="col-md-6">
+					    <img class="picture" src="https://c.pxhere.com/photos/1e/ba/bonfire_burn_burning_burnt_campfire_close_up_dark_fire-1551617.jpg!d"></img>
 					</div>
 				</div>
 			</div>
