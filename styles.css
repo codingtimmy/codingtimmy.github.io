@@ -31,6 +31,9 @@ h1{
 	padding: 20px;
 	text-align: center;
 }
+h5 {
+	display: none;
+}
 .nav-item:hover {
 	background-color: white;
 }
